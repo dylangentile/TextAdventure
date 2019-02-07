@@ -1,0 +1,7 @@
+GAMENAME: "TUTORIAL"
+ROOMMAP(4,4){
+a,b,x,y
+q,g,f,p
+d,z,d,*x
+h,j,k,w
+}

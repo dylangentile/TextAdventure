@@ -1,4 +1,4 @@
-#include "tutorial.h" //includes game which includes settings, iostream, string cctype etc
+#include "game.h" //includes game which includes settings, iostream, string cctype etc
 using namespace std;
 
 
@@ -65,7 +65,8 @@ int main(int argc, char const *argv[])
 	string userin;
 	getline(cin, userin);
 	if(tolower(userin[0]) == 'y'){
-		Tutorial *thetutorial = new Tutorial;
+		Game *thegame = new Game;
+		thegame->init(0, userpref);
 	}
 	cout << "Alright. Choose which adventure you'd like:\n\n\t1:Sci-Fi\n\t2:Cowboy\n\t3:Mystery\n(1/2/3.../q):";
 	getline(cin, userin);

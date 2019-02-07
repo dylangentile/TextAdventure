@@ -7,7 +7,7 @@ LFLAGS =
 LIBS = 
 #-lmylib -lm
 
-SRCS = textGame.cpp tutorial.cpp game.cpp
+SRCS = textGame.cpp player.cpp game.cpp room.cpp objectMap.cpp 
 
 
 OBJS = $(SRCS:.c=.o)

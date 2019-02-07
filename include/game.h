@@ -3,15 +3,19 @@
 #include <iostream>
 #include <string>
 #include <cctype>
+#include <vector>
+
 
 class Game{
 public:
 	Game();
 	~Game();
 	void init(int gameId, Settings *mysettings);
+	std::string gamename;
+	char **roommap;
 private:
-//functions
+	std::string readIt(std::string dir, int *length);
+	bool parser(std::string srcFile, int *filelength);
 private:
-//vars
-
+	std::string error;
 };
